@@ -1,0 +1,109 @@
+doctype 5
+html
+	head
+		title= title
+		meta(content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no', name='viewport')
+		link(rel='stylesheet', href='/stylesheets/bootstrap.min.css')
+		link(rel='stylesheet', href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css')
+		link(rel='stylesheet', href='//code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+		link(rel='stylesheet', href='/stylesheets/AdminLTE.min.css')
+		link(rel='stylesheet', href='/stylesheets/skins/skin-blue.min.css')
+
+	body.skin-blue.sidebar-mini
+		.wrapper
+			header.main-header
+				a.logo(href="index2.html")
+					span.logo-mini
+						b  DEV
+					span.logo-lg
+						| Thai Smart
+						b  Dev
+				
+				nav.navbar.navbar-static-top(role="navigation")
+					a.sidebar-toggle(href="#", data-toggle="offcanvas", role="button")
+						span.sr-only  Toggle navigation
+
+					div.navbar-custom-menu
+						ul.nav.navbar-nav
+
+							li.dropdown.user.user-menu
+								a.dropdown-toggle(href="#", data-toggle="dropdown")
+									img.user-image(src="/images/avatar5.png", alt="User Image")
+									span.hidden-xs  Alexander Pierce
+								ul.dropdown-menu
+									li.user-header
+										img.img-circle(src="/images/avatar5.png", alt="User Image")
+										p
+											| Alexander Pierce - Web Developer
+											small Member since Nov. 2012
+									li.user-body
+										div.col-xs-4.text-center
+											a(href="#") Followers
+										div.col-xs-4.text-center
+											a(href="#") Sales
+										div.col-xs-4.text-center
+											a(href="#") Friends
+									li.user-footer
+										div.pull-left
+											a.btn.btn-default.btn-flat(href="#") Profile
+										div.pull-right
+											a.btn.btn-default.btn-flat(href="#") Sign out
+
+			aside.main-sidebar
+				section.sidebar
+					div.user-panel
+						div.pull-left.image
+							img.img-circle(src="/images/avatar5.png", alt="User Image")
+						div.pull-left.info
+							p
+								| Alexander Pierce
+							a(href="#")
+								i.fa.fa-circle.text-success
+								| Online
+
+					form.sidebar-form(action="#", method="get")
+						div.input-group
+							input.form-control(type="text", name="q", placeholder="Search...")
+							span.input-group-btn
+								button.btn.btn-flat(type='submit', name='search')
+									i.fa.fa-search
+
+					ul.sidebar-menu
+						li.header  HEADER
+						li.active
+							a(href="#")
+								i.fa.fa-heart
+								span  Link
+						li.treeview
+							a(href="#")
+								i.fa.fa-link
+								span  Multilevel
+								i.fa.fa-angle-left.pull-right
+							ul.treeview-menu
+								li
+									a(href="#") Link in level 2
+								li
+									a(href="#") Link in level 2
+
+			div.content-wrapper
+				section.content-header
+					h1  Page Header
+						small  Optional description
+					ol.breadcrumb
+						li
+							a(href="#")
+								i.fa.fa-dashboard
+								|  Level
+						li.active  Here
+				section.content
+					block content
+
+			footer.main-footer
+				div.pull-right.hidden-xs  Anything you want
+				strong  Copyright &copy; 2015 
+					a(href="#") Company
+				|  All rights reserved.
+
+		script(src='/plugins/jQuery/jQuery-2.1.4.min.js')
+		script(src='/javascripts/bootstrap.min.js')
+		script(src='/javascripts/app.min.js')
